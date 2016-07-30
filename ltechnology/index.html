@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>LTechnology</title>
+	<style type="text/css">
+		section#drone-specs {
+			width: auto;
+			height:auto;
+			margin:auto;
+		}
+		iframe.drone {
+			width: 400px;
+			height: 280px;			
+			border:  none;
+			overflow: hidden;
+		}
+
+		iframe.drone::-webkit-scrollbar {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<section id="drone-specs">
+		<img src="_imagens/drone.png" class="drone" usemap="#dronemapa">
+		<map name="dronemapa">
+			<area shape="rect" coords="294,224,475,370" href="drone.html#camera" target="janela">
+			<area shape="rect" coords="318,158,400,225" href="drone.html#bateria" target="janela">
+			<area shape="circle" coords="576,100,52" href="drone.html#outros" target="janela">
+		</map>
+		<iframe src="drone.html" class="drone" name="janela"></iframe>
+	</section>
+</body>
+</html>
